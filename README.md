@@ -62,3 +62,10 @@ Bei ca. 1,5 V (= 3,0 V Akku) sollte der Verbraucher in den Schlafmodus gehen.
 - [ ] Footprints zuweisen
 - [ ] PCB-Layout
 - [ ] Fertigungsdaten (Gerber/Bohrdaten werden nicht eingecheckt, siehe `.gitignore`)
+
+## Lizenz
+
+Copyright © 2026 Eugen Vladimirski
+
+Dieses Projekt steht unter der **CERN Open Hardware Licence Version 2 – Strongly Reciprocal**
+(SPDX: `CERN-OHL-S-2.0`), siehe [`LICENSE`](LICENSE).
