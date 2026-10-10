@@ -1,0 +1,14 @@
+# KiCad lokal/temporär
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.lck
+_autosave-*
+\#auto_saved_files\#
+~*
+
+# Fertigungsdaten (bei Bedarf separat als Release ablegen)
+gerber/
+*.gbr
+*.drl
+*.csv
