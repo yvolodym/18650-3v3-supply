@@ -12,3 +12,4 @@ gerber/
 *.gbr
 *.drl
 *.csv
+.history/
