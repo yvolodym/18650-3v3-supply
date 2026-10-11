@@ -5,9 +5,14 @@ KiCad-Projekt (KiCad 10).
 
 ## Blockschaltbild
 
-```
-USB 5V ──► TP4056 ──► 18650 + DW01A/FS8205A ──► MT3608 Boost (4,0 V) ──► AP2112K LDO ──► 3,3 V
- (P1)     Laden 0,9A   Schutz                     über SS14                                (J1)
+```mermaid
+flowchart LR
+    USB["USB-C 5 V<br/>(P1)"] -->|VBUS| CHG["TP4056 (U1)<br/>Laden 0,9 A"]
+    CHG -->|BAT+| BAT["18650 (BT1)<br/>+ DW01A / FS8205A<br/>Schutz"]
+    BAT -->|BAT+| BOOST["MT3608 (U3)<br/>Boost 4,0 V<br/>über SS14"]
+    BOOST -->|VBOOST| LDO["AP2112K-3.3 (U4)<br/>LDO"]
+    LDO -->|+3V3| OUT["3,3 V<br/>(J1)"]
+    BAT -->|"R8/R9 ÷2"| SENSE["VBAT_SENSE<br/>(J1 Pin 3)"]
 ```
 
 1. **Laden** – USB-C-Buchse (P1, 5 V) → TP4056 (U1), Ladestrom ca. 0,9 A (R1 = 1,2 kΩ an PROG,
