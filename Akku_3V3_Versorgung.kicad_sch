@@ -496,6 +496,140 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Akku3V3:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Steckverbinder 3-polig"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Akku3V3:DW01A"
 			(pin_names
 				(offset 1.016)
@@ -1892,7 +2026,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:USB_C_Plug_USB2.0"
+		(symbol "Akku3V3:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1901,26 +2035,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "P"
-				(at -10.16 19.05 0)
+			(property "Reference" "J"
+				(at 0 22.225 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "USB_C_Plug_USB2.0"
-				(at 12.7 19.05 0)
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
+				(at 0 19.685 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -1945,7 +2077,7 @@
 					)
 				)
 			)
-			(property "Description" "USB 2.0-only Type-C Plug connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1967,7 +2099,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "USB*C*Plug*"
+			(property "ki_fp_filters" "USB*C*Receptacle*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1978,7 +2110,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Plug_USB2.0_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -2035,6 +2167,17 @@
 					)
 				)
 				(rectangle
+					(start 10.16 0.254)
+					(end 9.144 -0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
 					(start 10.16 -2.286)
 					(end 9.144 -2.794)
 					(stroke
@@ -2045,8 +2188,41 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 10.16 -4.826)
+					(end 9.144 -5.334)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "USB_C_Plug_USB2.0_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -2247,7 +2423,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Plug_USB2.0_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -2287,7 +2463,7 @@
 				(pin bidirectional line
 					(at 15.24 10.16 180)
 					(length 5.08)
-					(name "CC"
+					(name "CC1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2331,6 +2507,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2417,7 +2611,7 @@
 				(pin bidirectional line
 					(at 15.24 7.62 180)
 					(length 5.08)
-					(name "VCONN"
+					(name "CC2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2425,6 +2619,60 @@
 						)
 					)
 					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2481,193 +2729,6 @@
 						)
 					)
 					(number "SH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector_Generic:Conn_01x03"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x03"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x03_1_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2793,8 +2854,123 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
-	(text "1  Laden: USB 5V -> TP4056 (1A)"
+	(text "1  Laden: USB 5V -> TP4056 (ca. 0,9A mit R1 = 1,2k)"
 		(exclude_from_sim no)
 		(at 25.4 33.02 0)
 		(effects
@@ -2807,7 +2983,7 @@
 		)
 		(uuid "14822156-9bec-41fc-a381-ebf8ddf80fd6")
 	)
-	(text "Akku 18650 -> 3,3V stabil (2,5 ... 4,2V Eingang)"
+	(text "Akku 18650 -> 3,3V stabil (2,4 ... 4,2V Eingang)"
 		(exclude_from_sim no)
 		(at 25.4 17.78 0)
 		(effects
@@ -2831,7 +3007,7 @@
 		)
 		(uuid "4659c7c8-ed56-451e-bd21-cf88b448ce9d")
 	)
-	(text "Fuer 5V: R7 = 3k. Bei vollem Akku (4,2V) wird durchgereicht, LDO regelt."
+	(text "Fuer 5V: R7 = 3k. Bei vollem Akku (4,2V) taktet der Boost nur noch wenig, LDO regelt."
 		(exclude_from_sim no)
 		(at 172.72 105.41 0)
 		(effects
@@ -2901,15 +3077,16 @@
 		)
 		(uuid "8b4da89d-4c48-429e-91ae-e7dc497e4285")
 	)
-	(text "VBAT_SENSE"
+	(text "USB-C: CC1/CC2 je 5,1k nach GND (Sink -> 5V)"
 		(exclude_from_sim no)
-		(at 251.968 157.734 0)
+		(at 25.4 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(uuid "9bf71a70-da89-47ce-8ae2-1a9e8f8f463b")
+		(uuid "b4ecfbca-97b2-42b3-831a-721b41ad28b0")
 	)
 	(text "2  Akku 18650 + Schutz (DW01A / FS8205A)"
 		(exclude_from_sim no)
@@ -3122,24 +3299,32 @@
 		(uuid "fef98133-9497-48f1-8904-6325b139fa8f")
 	)
 	(no_connect
+		(at 49.53 74.93)
+		(uuid "2cdfbc05-46ed-4480-9a94-ec979d24ae3b")
+	)
+	(no_connect
 		(at 86.36 160.02)
 		(uuid "32fc6d42-c0e0-498d-bbfd-db3e699cf5d1")
+	)
+	(no_connect
+		(at 49.53 77.47)
+		(uuid "4768d6ef-c5c3-4cb0-94d1-2c90e62c312a")
 	)
 	(no_connect
 		(at 215.9 154.94)
 		(uuid "5885cf46-a30b-43ef-bd63-d027d603d27f")
 	)
 	(no_connect
+		(at 49.53 67.31)
+		(uuid "5fcf803f-c015-4d7e-85d3-31ec2ed90f3a")
+	)
+	(no_connect
 		(at 233.68 68.58)
 		(uuid "674d9589-ddca-413b-a05d-838259ae6a95")
 	)
 	(no_connect
-		(at 49.53 52.07)
-		(uuid "ba97630c-1a4e-4240-8d6d-3817ee213e74")
-	)
-	(no_connect
-		(at 49.53 54.61)
-		(uuid "d46ddbb6-42a4-4a28-b250-c0785aac4d20")
+		(at 49.53 62.23)
+		(uuid "a05624b6-d8fd-419a-8918-2e75bd383737")
 	)
 	(no_connect
 		(at 49.53 64.77)
@@ -3168,6 +3353,16 @@
 			(type default)
 		)
 		(uuid "01d284fe-8a43-423a-b3b2-977c22a4f86e")
+	)
+	(wire
+		(pts
+			(xy 49.53 52.07) (xy 54.61 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01eaba83-2fb4-40e5-b51c-4ecd57b8809f")
 	)
 	(wire
 		(pts
@@ -3291,6 +3486,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 86.36) (xy 82.55 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1775fa64-cb8f-4fcb-b7e9-bbbab0e72620")
+	)
+	(wire
+		(pts
 			(xy 271.78 173.99) (xy 259.08 173.99)
 		)
 		(stroke
@@ -3318,6 +3523,16 @@
 			(type default)
 		)
 		(uuid "1951e2a6-3037-48c6-9124-5413038a22cd")
+	)
+	(wire
+		(pts
+			(xy 50.8 101.6) (xy 50.8 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bb72b91-a560-4507-b794-9102bce35c07")
 	)
 	(wire
 		(pts
@@ -3628,6 +3843,16 @@
 			(type default)
 		)
 		(uuid "4eb30fda-3248-408b-a373-f48a165c93cf")
+	)
+	(wire
+		(pts
+			(xy 40.64 101.6) (xy 40.64 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5155f509-89f5-4ce5-9a30-499e53ab2402")
 	)
 	(wire
 		(pts
@@ -4371,6 +4596,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 54.61) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8a943f8-6761-45b0-b78a-8eb9a94873c7")
+	)
+	(wire
+		(pts
 			(xy 259.08 142.24) (xy 259.08 139.7)
 		)
 		(stroke
@@ -4499,6 +4734,16 @@
 		)
 		(uuid "ffb8f059-6f86-4dbd-bed3-09329a9bb422")
 	)
+	(label "VBOOST"
+		(at 186.69 152.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04aedb40-32fd-4562-8b87-7e17dfc9bb78")
+	)
 	(label "LED_G"
 		(at 157.48 59.69 0)
 		(effects
@@ -4519,6 +4764,16 @@
 		)
 		(uuid "2203f894-0830-4cef-91d1-677816179ac2")
 	)
+	(label "CC2"
+		(at 54.61 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "39e6933d-72b0-47a0-b3ee-3329e6fe943e")
+	)
 	(label "LED_R"
 		(at 147.32 59.69 0)
 		(effects
@@ -4538,6 +4793,16 @@
 			(justify left bottom)
 		)
 		(uuid "73241793-ae4c-4c36-9c8e-830faa39c2e3")
+	)
+	(label "VBAT_SENSE"
+		(at 259.08 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "86012b49-e14d-4700-89c8-651a18736fe5")
 	)
 	(label "LED_R"
 		(at 147.32 59.69 0)
@@ -4569,6 +4834,16 @@
 		)
 		(uuid "9ff4894e-64f8-4d58-8cd2-b281cca5c20b")
 	)
+	(label "VBOOST"
+		(at 274.32 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1f3545c-1a66-4009-a555-d787367a2fc7")
+	)
 	(label "BAT+"
 		(at 134.62 55.88 0)
 		(effects
@@ -4598,6 +4873,36 @@
 			(justify right bottom)
 		)
 		(uuid "b6c2a612-2437-417d-a347-e586a2baaed4")
+	)
+	(label "CC1"
+		(at 40.64 101.6 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4902dd3-6ff6-4e79-9e02-14fd90cfd30c")
+	)
+	(label "CC1"
+		(at 54.61 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0945c49-42c3-4b0a-9be4-41cee1db082d")
+	)
+	(label "CC2"
+		(at 50.8 101.6 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9931c82-940f-4fd7-845c-6fa54a7efd69")
 	)
 	(label "+3V3"
 		(at 223.52 148.59 0)
@@ -4776,6 +5081,84 @@
 			(project "Akku_3V3_Versorgung"
 				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 82.55 90.17 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1649d363-368f-4eb9-9bea-84e5f4f2373a")
+		(property "Reference" "#FLG01"
+			(at 82.55 92.075 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 82.55 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 82.55 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "599501e9-5b98-4c16-afa3-efc64dfa383b")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -5181,7 +5564,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Plug_USB2.0")
+		(lib_id "Akku3V3:USB_C_Receptacle_USB2.0_16P")
 		(at 34.29 62.23 0)
 		(unit 1)
 		(body_style 1)
@@ -5202,7 +5585,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Plug_USB2.0"
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
 			(at 34.29 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5283,6 +5666,18 @@
 		)
 		(pin "A1"
 			(uuid "cd0fb331-9f97-4e2a-b652-abef3b25132a")
+		)
+		(pin "A8"
+			(uuid "4d1dc765-9d34-4b04-a30f-17306ff24bbe")
+		)
+		(pin "B6"
+			(uuid "b544becc-7cdf-4a4f-a6ce-c44f23ff1c31")
+		)
+		(pin "B7"
+			(uuid "741a7d5a-6111-4365-b84d-ec0c7a61eea9")
+		)
+		(pin "B8"
+			(uuid "4c740482-36fa-40d7-bee4-044600a85160")
 		)
 		(instances
 			(project "Akku_3V3_Versorgung"
@@ -5975,6 +6370,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Akku3V3:R")
+		(at 50.8 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72ed4d47-c605-4ed2-912a-e1e25b2ae2b2")
+		(property "Reference" "R11"
+			(at 53.34 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 53.34 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB-C CC2 Pull-down (Sink-Kennung)"
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a02aa2a-0f71-4b64-9f13-dd53758b94d4")
+		)
+		(pin "2"
+			(uuid "34aa2c0a-fbee-494f-bb34-85d2aadadb04")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Akku3V3:C")
 		(at 62.23 66.04 0)
 		(unit 1)
@@ -6218,6 +6694,165 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 40.64 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a066651c-3e14-468f-964d-b65a783e575f")
+		(property "Reference" "#PWR08"
+			(at 40.64 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60428e1a-f6d0-401b-8a85-206512109614")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Akku3V3:R")
+		(at 40.64 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a135985d-4692-493f-b4b9-4ffbc6a0ab39")
+		(property "Reference" "R10"
+			(at 43.18 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.1k"
+			(at 43.18 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB-C CC1 Pull-down (Sink-Kennung)"
+			(at 40.64 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f2f4f47-1e95-49fc-83b5-0d768dafa81f")
+		)
+		(pin "2"
+			(uuid "322d717d-e1dc-4473-9555-6ae2c27f4161")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Akku3V3:C")
 		(at 134.62 62.23 0)
 		(unit 1)
@@ -6299,7 +6934,85 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
+		(lib_id "power:GND")
+		(at 50.8 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a909a762-7c32-4fe3-9102-b5f9e430dec0")
+		(property "Reference" "#PWR09"
+			(at 50.8 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2d6e252-f3e7-46d9-becb-3be6e3f7266e")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Akku3V3:Conn_01x03")
 		(at 279.4 154.94 0)
 		(unit 1)
 		(body_style 1)
