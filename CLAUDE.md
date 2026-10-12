@@ -12,7 +12,7 @@ MT3608-Boost auf ~4,0 V, AP2112K-3.3-LDO). Details und Stückliste: `README.md`.
 - `Akku_3V3_Versorgung.kicad_sch` – Schaltplan (S-Expression, Hauptdatei)
 - `Akku_3V3_Versorgung.kicad_pcb` – Platine, aktuell noch leer
 - `Akku_3V3_Versorgung.kicad_pro` – Projekteinstellungen
-- `Akku3V3.kicad_sym` – projektlokale Symbolbibliothek; alle Schaltplansymbole nutzen `Akku3V3:*`
+- `Akku3V3.kicad_sym` – projektlokale Symbolbibliothek
 - `sym-lib-table` – bindet die Bibliothek über `${KIPRJMOD}` ein
 
 ## Regeln

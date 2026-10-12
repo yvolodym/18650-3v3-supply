@@ -19,7 +19,7 @@ flowchart LR
    laut Datenblatt-Tabelle; für 1 A: R1 = 1,1 kΩ). CC1/CC2 je 5,1 kΩ (R10/R11) nach GND, damit
    USB-C-Netzteile 5 V liefern.
    LEDs: D1 rot = lädt, D2 grün = voll. TEMP liegt an GND (NTC-Überwachung deaktiviert).
-2. **Akku + Schutz** – 18650-Zelle (BT1) zwischen BAT+ und BAT−, DW01A (U2) + Dual-MOSFET FS8205A (Q1).
+2. **Akku + Schutz** – 18650-Zelle (BT1) zwischen BAT+ und BAT−, DW01A (U5) + Dual-MOSFET FS8205A (Q1).
    Abschaltung bei Überladung 4,3 V / Tiefentladung 2,4 V / Überstrom.
    Systemmasse GND = P− (hinter dem FS8205A).
 3. **Boost** – MT3608 (U3) mit L1 = 22 µH (≥ 2 A) und Schottky D3 (SS14) auf ca. 4,0 V (Netz `VBOOST`):
@@ -42,7 +42,7 @@ Bei ca. 1,5 V (= 3,0 V Akku) sollte der Verbraucher in den Schlafmodus gehen.
 | Ref | Wert |
 |-----|------|
 | U1 | TP4056 Lade-IC |
-| U2 | DW01A Akkuschutz |
+| U5 | DW01A Akkuschutz |
 | Q1 | FS8205A Dual-N-MOSFET |
 | U3 | MT3608 Boost-Wandler |
 | U4 | AP2112K-3.3 LDO |
