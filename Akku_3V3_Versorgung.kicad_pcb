@@ -6624,7 +6624,7 @@
 			(size 1.15 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.217391)
-			(net "/VBOOST")
+			(net "/BAT+")
 			(pintype "passive")
 			(uuid "d65a371d-8054-4700-9cbc-7523e4260055")
 		)
