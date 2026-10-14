@@ -2276,14 +2276,14 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_Bourns_SRN6045TA"
+	(footprint "Inductor_SMD:L_1206_3216Metric"
 		(layer "F.Cu")
 		(uuid "54330f60-a119-4056-805a-500f51f1302f")
 		(at 135.425 58)
-		(descr "http://www.bourns.com/docs/product-datasheets/srn6045ta.pdf")
-		(tags "Semi-shielded Power Inductor")
+		(descr "Inductor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "inductor")
 		(property "Reference" "L1"
-			(at 0 -4.6 0)
+			(at 0 -1.9 0)
 			(layer "F.SilkS")
 			(uuid "536e4bf9-7fd1-4633-a6ac-a92dfcf307e8")
 			(effects
@@ -2294,7 +2294,7 @@
 			)
 		)
 		(property "Value" "22uH / >=2A"
-			(at 0 4.2 0)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "38cc9eb0-5eed-47a9-9221-93c94566cafa")
 			(effects
@@ -2306,26 +2306,34 @@
 		)
 		(property "Datasheet" ""
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b7c46fa2-98ed-4122-b7eb-313600b39ea0")
 			(effects
 				(font
 					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
 		(property "Description" "Isat >= 2A, z.B. SRN6045TA-220M"
 			(at 0 0 0)
-			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "891b6fdd-be94-4f7e-bd19-90a3f26d1c55")
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f7b85850-93ba-4c37-94e6-f160bc188fda")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2342,58 +2350,8 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -3.1 -3.1)
-			(end -3.1 -2.65)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1e8749a1-2d6d-40d9-b00f-a937e92801bc")
-		)
-		(fp_line
-			(start -3.1 -3.1)
-			(end 3.1 -3.1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4eef5d7d-20f7-4072-a2d5-03e39e30ab35")
-		)
-		(fp_line
-			(start -3.1 3.1)
-			(end -3.1 2.65)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3de218e4-cb8e-4cec-93a7-c7296d644fe5")
-		)
-		(fp_line
-			(start 3.1 -3.1)
-			(end 3.1 -2.65)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "1d4530f6-189b-41d9-929f-eab656582148")
-		)
-		(fp_line
-			(start 3.1 3.1)
-			(end -3.1 3.1)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d67cbc04-b883-4f9e-b28b-0082ba071d4f")
-		)
-		(fp_line
-			(start 3.1 3.1)
-			(end 3.1 2.65)
+			(start -0.835242 -0.91)
+			(end 0.835242 -0.91)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2402,114 +2360,68 @@
 			(uuid "a3f1b68d-6a35-4530-9cfb-06b2eb745074")
 		)
 		(fp_line
-			(start -3.5 -3.25)
-			(end -3.5 3.25)
+			(start -0.835242 0.91)
+			(end 0.835242 0.91)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d67cbc04-b883-4f9e-b28b-0082ba071d4f")
+		)
+		(fp_rect
+			(start -2.35 -1.2)
+			(end 2.35 1.2)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
+			(fill no)
 			(layer "F.CrtYd")
-			(uuid "f4781618-ed53-4c1f-9847-cfeaac8f96d3")
+			(uuid "dea10e09-b981-4f04-8e51-6e4867f1f66b")
 		)
-		(fp_line
-			(start -3.5 3.25)
-			(end 3.5 3.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e5e86fab-6120-4008-b7ca-bdeba943ca79")
-		)
-		(fp_line
-			(start 3.5 -3.25)
-			(end -3.5 -3.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ea1ed5cb-fe17-4693-ad53-fd7b6b537a95")
-		)
-		(fp_line
-			(start 3.5 3.25)
-			(end 3.5 -3.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b685b680-4c12-4d37-9e43-7472bb197123")
-		)
-		(fp_line
-			(start -3 -3)
-			(end -3 3)
+		(fp_rect
+			(start -1.6 -0.8)
+			(end 1.6 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
+			(fill no)
 			(layer "F.Fab")
-			(uuid "e43ef663-1839-4c15-8e0e-1ab78d916bc7")
-		)
-		(fp_line
-			(start -3 -3)
-			(end 3 -3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3724b7a2-81f1-4fac-ae83-68ea27ac5ce9")
-		)
-		(fp_line
-			(start -3 3)
-			(end 3 3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e08eba2c-431b-4f69-b953-c29285d416a0")
-		)
-		(fp_line
-			(start 3 3)
-			(end 3 -3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "aaf8f04a-2228-47f4-a010-f4904a450035")
+			(uuid "8fe97138-3e1e-4c7f-88c1-1b89000bbed0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6d5a2b7a-9877-4dcf-af87-727b42c5918a")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
-		(pad "1" smd rect
-			(at -2.075 0)
-			(size 2.35 5.1)
+		(pad "1" smd roundrect
+			(at -1.575 0)
+			(size 1.05 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.238095)
 			(net "/BAT+")
 			(pintype "passive")
 			(uuid "5384dfbf-e584-4368-9037-37d32be0134d")
 		)
-		(pad "2" smd rect
-			(at 2.075 0)
-			(size 2.35 5.1)
+		(pad "2" smd roundrect
+			(at 1.575 0)
+			(size 1.05 1.9)
 			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.238095)
 			(net "/SW")
 			(pintype "passive")
 			(uuid "d28bd163-ed3c-4f4d-be2f-0ec3ec1cada9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.step"
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1206_3216Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
