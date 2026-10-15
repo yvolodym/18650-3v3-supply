@@ -2759,7 +2759,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DPST_x2"
+		(symbol "Switch:SW_SPDT_XKB_DMx-xxxx-1"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2770,7 +2770,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 0 3.175 0)
+				(at 0 4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2779,8 +2779,8 @@
 					)
 				)
 			)
-			(property "Value" "SW_DPST_x2"
-				(at 0 -2.54 0)
+			(property "Value" "SW_SPDT_XKB_DMx-xxxx-1"
+				(at 0 -5.588 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2811,7 +2811,7 @@
 					)
 				)
 			)
-			(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+			(property "Description" "Position switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2822,7 +2822,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "switch lever"
+			(property "ki_keywords" "limit switch single pole double throw spdt microswitch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2833,7 +2833,18 @@
 					)
 				)
 			)
-			(symbol "SW_DPST_x2_0_0"
+			(property "ki_fp_filters" "SW?XKB?DM??16U??1*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_XKB_DMx-xxxx-1_1_1"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -2847,7 +2858,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.524 1.778)
+						(xy -1.524 0.254) (xy 2.286 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.508) (xy 0.762 0.508) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2858,7 +2881,7 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
+					(center 2.032 2.54)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -2868,8 +2891,17 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "SW_DPST_x2_1_1"
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2889,7 +2921,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "B"
 						(effects
@@ -2906,12 +2938,10 @@
 						)
 					)
 				)
-			)
-			(symbol "SW_DPST_x2_2_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 2.54 180)
 					(length 2.54)
-					(name "A"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2919,24 +2949,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3411,10 +3423,10 @@
 		(uuid "81ee05aa-705b-4d3e-b0e6-49ac076aa614")
 	)
 	(junction
-		(at 46.99 158.75)
+		(at 46.99 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "941e9912-bfc8-4b0c-bdaa-9401ac6fd721")
+		(uuid "84110c02-3196-41c0-9a41-59f0532690ac")
 	)
 	(junction
 		(at 34.29 86.36)
@@ -3966,16 +3978,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 158.75) (xy 30.48 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "411bcbdc-ec4e-4519-822e-675b353a3334")
-	)
-	(wire
-		(pts
 			(xy 129.54 151.13) (xy 129.54 154.94)
 		)
 		(stroke
@@ -4046,7 +4048,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 168.91) (xy 46.99 176.53)
+			(xy 46.99 171.45) (xy 46.99 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4186,16 +4188,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 158.75) (xy 46.99 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70e23ffe-f3fa-4f6c-b771-3ad20684deb1")
-	)
-	(wire
-		(pts
 			(xy 120.65 167.64) (xy 123.19 167.64)
 		)
 		(stroke
@@ -4233,6 +4225,16 @@
 			(type default)
 		)
 		(uuid "7ecbcabf-5d90-493f-b684-814ed6c7ce39")
+	)
+	(wire
+		(pts
+			(xy 39.37 161.29) (xy 46.99 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa13109-673f-496d-b05a-45376af97881")
 	)
 	(wire
 		(pts
@@ -4446,6 +4448,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 161.29) (xy 46.99 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48bff4b-6977-451d-8fa5-bdfc52d11783")
+	)
+	(wire
+		(pts
 			(xy 212.09 68.58) (xy 213.36 68.58)
 		)
 		(stroke
@@ -4603,6 +4615,16 @@
 			(type default)
 		)
 		(uuid "c2201d69-8538-4468-888f-590b34d76706")
+	)
+	(wire
+		(pts
+			(xy 22.86 158.75) (xy 29.21 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a34735-8313-4d82-8fa0-079dd4e1e918")
 	)
 	(wire
 		(pts
@@ -6401,92 +6423,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_DPST_x2")
-		(at 35.56 158.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ca4129c-7c25-4de9-86b2-2ac429a9df35")
-		(property "Reference" "SW1"
-			(at 35.56 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DPST_x2"
-			(at 35.56 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
-			(at 35.56 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "49e3b4c7-d2c1-4e23-9cb4-d4196cecd661")
-		)
-		(pin "3"
-			(uuid "7c85cf00-52bd-4aac-b668-e25591187400")
-		)
-		(pin "2"
-			(uuid "5ea5b88c-1f20-4bad-b0c5-28aaca0c91f3")
-		)
-		(pin "4"
-			(uuid "6c307a99-5389-4cce-9db4-4d9b49ec0db0")
-		)
-		(instances
-			(project "Akku_3V3_Versorgung"
-				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Akku3V3:C")
 		(at 274.32 80.01 0)
 		(unit 1)
@@ -6569,7 +6505,7 @@
 	)
 	(symbol
 		(lib_id "Akku3V3:R")
-		(at 46.99 165.1 0)
+		(at 46.99 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6579,17 +6515,6 @@
 		(dnp no)
 		(uuid "5ef2a771-0c3e-49cb-85bb-efe958355f4c")
 		(property "Reference" "R4"
-			(at 49.53 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100R"
 			(at 49.53 166.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6600,8 +6525,19 @@
 				(justify left)
 			)
 		)
+		(property "Value" "100R"
+			(at 49.53 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 46.99 165.1 0)
+			(at 46.99 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6612,7 +6548,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 165.1 0)
+			(at 46.99 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6623,7 +6559,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 46.99 165.1 0)
+			(at 46.99 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7773,6 +7709,89 @@
 			(project "Akku_3V3_Versorgung"
 				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT_XKB_DMx-xxxx-1")
+		(at 34.29 158.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b74379be-f463-47af-a176-477ce94937dd")
+		(property "Reference" "SW2"
+			(at 34.29 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT_XKB_DMx-xxxx-1"
+			(at 34.29 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_yvolodym:Switch_Small"
+			(at 34.29 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Position switch"
+			(at 34.29 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b1de8a7-7e96-4b46-89cd-496bc6e43fe2")
+		)
+		(pin "2"
+			(uuid "b92ce049-a40c-459d-98d4-ee00ffe68e4e")
+		)
+		(pin "3"
+			(uuid "d1966dc8-0686-4fe3-af3b-0a20234a9dac")
+		)
+		(instances
+			(project "Akku_3V3_Versorgung"
+				(path "/75321e38-43b6-49a3-b59a-8489ddbdc7b9"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
